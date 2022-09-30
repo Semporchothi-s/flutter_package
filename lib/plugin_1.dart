@@ -32,19 +32,21 @@ class XmpTextField {
                   const BorderSide(width: 0.5, color: Colors.transparent)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(0),
-              borderSide: const BorderSide(width: 0.5, color: Colors.blue)),
+              borderSide: const BorderSide(width: 0.5, color: Colors.green)),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(0),
             borderSide: const BorderSide(width: 0.5, color: Colors.red),
           ),
           focusedErrorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(0),
-            borderSide: const BorderSide(width: 0.5, color: Colors.green),
+            borderSide: const BorderSide(width: 0.5, color: Colors.red),
           ),
           counterStyle: const TextStyle(fontSize: 12, height: 0.5),
           errorMaxLines: 3,
           errorStyle: const TextStyle(fontSize: 11, color: Colors.red),
-          // hintStyle: textFieldHint
+          hintStyle: TextStyle(
+            color: Colors.grey.shade400
+          )
         ));
   }
 }
